@@ -9,4 +9,13 @@ const getMessage = (name, action, message) => {
     return name+" "+action+' '+message ;
 }
 
+const addHandler = (a,b) => { 
+    console.log("Arrow method will now add "+a+" and "+b);
+    return a+b 
+}
+
+const nextNumberHandler = a => a+1;
+
 console.log(getMessage(name, action, message));
+console.log("Add Handler: "+addHandler(10,5));
+console.log("Next Number: "+nextNumberHandler(20));
